@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Si usa este software, cite la tesis y este repositorio."
+title: "Transitorio bifásico"
+type: software
+authors:
+  - family-names: "Ortega-Heredia"
+    given-names: "Aiken H."
+    orcid: "https://orcid.org/0009-0001-1577-6595"
+    affiliation: "Universidad de Cartagena"
+preferred-citation:
+  type: thesis
+  title: "Understanding starting-up operation in pressurised systems: mathematical and machine learning models"
+  authors:
+    - family-names: "Ortega Heredia"
+      given-names: "Aiken H."
+  institution:
+    name: "Universidad de Cartagena"
+  year: 2026

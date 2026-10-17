@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transitorio bifásico</title>
+<meta name="description" content="Aplicación MATLAB para simular el llenado y vaciado bifásico (agua y aire) de tuberías a presión.">
+<link rel="stylesheet" href="css/estilos.css"></head><body>
+<header class="top"><div class="rayas"></div><div><small>MODELO SIMULINK · APP MATLAB</small><b>Transitorio bifásico</b></div>
+<nav><a href="#resultados">Resultados</a><a href="#graficas">Gráficas</a><a href="#animacion">Animación</a><a href="#tesis">Tesis</a></nav></header>
+
+<div class="hero">
+<h1>Llenado y vaciado bifásico de tuberías</h1>
+<p>Una aplicación MATLAB que simula la columna de agua y la bolsa de aire en tuberías a presión, con exportación de datos y gráficas.</p>
+<div class="btns"><a class="btn" href="#graficas">Explorar resultados</a><a class="btn alt" href="https://github.com/Aikenort26/TransitorioBifasico">Repositorio</a></div>
+<svg class="pipe" viewBox="0 0 900 150" aria-hidden="true">
+ <defs><clipPath id="c"><rect x="40" y="50" width="820" height="50"/></clipPath></defs>
+ <rect x="40" y="50" width="820" height="50" fill="#fff" stroke="#14283a" stroke-width="3"/>
+ <g clip-path="url(#c)"><rect x="40" y="50" width="520" height="50" fill="#2f7fb8" opacity=".35"/>
+ <line class="flow" x1="40" x2="860" y1="75" y2="75" stroke="#2f7fb8" stroke-width="6"/>
+ <g class="front"><rect x="556" y="50" width="4" height="50" fill="#d9590d"/></g></g>
+ <circle class="bub" cx="120" cy="90" r="4" fill="#fff" stroke="#2f7fb8"/><circle class="bub" cx="260" cy="85" r="3" fill="#fff" stroke="#2f7fb8" style="animation-delay:1s"/><circle class="bub" cx="400" cy="92" r="5" fill="#fff" stroke="#2f7fb8" style="animation-delay:2s"/>
+ <text x="40" y="38">agua</text><text x="820" y="38">aire</text></svg>
+</div>
+
+<main>
+<section id="resultados" class="rv"><h2>Resultados en cifras</h2><p>Valores extremos de la simulación seleccionada.</p>
+<div class="tabs"></div><div class="kpis" id="kpi"></div></section>
+
+<section id="graficas" class="rv"><h2>Gráficas interactivas</h2><p>Pasa el cursor sobre la curva para leer el valor en cada instante.</p><div id="charts"></div></section>
+
+<section id="animacion" class="rv"><h2>Animación del proceso</h2><p>La tubería se anima con las series Le(t) y v(t) de la simulación.</p>
+<svg id="anim" viewBox="0 0 900 170" width="100%" class="g"></svg>
+<p><button class="btn" id="play">Pausar</button> <input id="sl" type="range" min="0" value="0" aria-label="Tiempo"> <span id="tt"></span></p></section>
+
+<section class="rv"><h2>Figuras estáticas</h2><p>Versión SVG y PNG de cada caso, en <code>docs/figuras</code>.</p>
+<div class="cards">
+<div class="card"><h3>Vaciado con Pv</h3><img src="figuras/vaciado_conPv.svg" alt="Vaciado con tope de Pv"></div>
+<div class="card"><h3>Vaciado sin Pv</h3><img src="figuras/vaciado_sinPv.svg" alt="Vaciado sin tope de Pv"></div>
+<div class="card"><h3>Llenado</h3><img src="figuras/llenado.svg" alt="Llenado"></div></div></section>
+
+<section class="rv"><h2>Qué hace la app</h2>
+<div class="cards">
+<div class="card"><h3>Dos procesos</h3><p>Vaciado y llenado con un selector; el vaciado admite el caso crítico sin tope de presión de vapor.</p></div>
+<div class="card"><h3>Parámetros editables</h3><p>Diámetro, longitud, pendientes, coeficiente K y tiempo de parada, con valores por defecto restaurables.</p></div>
+<div class="card"><h3>Exportación</h3><p>Datos en CSV o XLSX y gráficas en PNG, SVG o PDF, con botones de icono.</p></div></div></section>
+
+<section id="tesis" class="rv"><h2>Base científica</h2><p>El modelo de llenado con bolsa de aire y columna rígida procede de la tesis de maestría:</p>
+<blockquote>Ortega Heredia, A. H. (2026). <i>Understanding starting-up operation in pressurised systems: mathematical and machine learning models</i>. Tesis de M.Sc. en Ingeniería Civil, Universidad de Cartagena, Colombia. Director: Ph.D. Óscar E. Coronado-Hernández.<br>
+Publicación derivada: <i>Designs</i> 2026, 10, 39. DOI <a href="https://doi.org/10.3390/designs10020039">10.3390/designs10020039</a>.</blockquote></section>
+</main>
+<footer>Aiken H. Ortega-Heredia · Universidad de Cartagena · 2026</footer>
+<div id="tip"></div>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>
