@@ -50,3 +50,7 @@ Publicación derivada: *Designs* 2026, 10, 39. https://doi.org/10.3390/designs10
 ## Notas
 
 Las unidades de la salida del llenado (v, P1 en m.c.a., Le) se tomaron de la salida del modelo y no se han verificado con el autor del modelo.
+
+## Descargo de responsabilidad
+
+El software se entrega "tal cual", sin garantía. El autor no responde por modificaciones, bifurcaciones ni redistribuciones de terceros; cada usuario debe revisar y validar el código y los resultados antes de usarlos. Ver [DESCARGO.md](DESCARGO.md).
