@@ -9,7 +9,7 @@ Requiere MATLAB R2026b con Simulink.
 
 ## Instalación
 
-Abrir `app/TransitorioBifasico.mltbx` en MATLAB (doble clic) y ejecutar `TransitorioBifasico`. También se puede abrir `app/TransitorioBifasico.mlapp` con los tres `.slx` en la misma carpeta.
+Los modelos Simulink (`VaciadoBifasicoSimple.slx`, `VaciadoBifasicoSimple_sinPv.slx`, `AirInTwoPipes.slx`) son privados del autor y no se distribuyen en este repositorio. La app `app/TransitorioBifasico.mlapp` se publica como referencia de la interfaz y solo simula si esos tres modelos están en la misma carpeta. Los resultados de referencia, los datos y la página interactiva sí están completos.
 
 ## Uso
 
@@ -36,7 +36,7 @@ Los datos están en `data/` (CSV con columnas `t_s, v_m_s, P_kPa_o_mca, L_m`) y 
 ## Estructura
 
 ```
-app/    App, paquete .mltbx y modelos Simulink (copias sin modificar)
+app/    App de MATLAB (sin los modelos Simulink, que son privados)
 data/   Series temporales de los tres casos (CSV)
 docs/   Página web, figuras SVG y PNG
 ```
