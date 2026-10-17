@@ -29,9 +29,13 @@ Corridas por lotes con los parámetros por defecto.
 
 Los datos están en `data/` (CSV con columnas `t_s, v_m_s, P_kPa_o_mca, L_m`) y alimentan las figuras de `docs/figuras/` y la página interactiva.
 
+![Vaciado con presión de vapor](docs/figuras/vaciado_conPv.png)
+![Vaciado sin presión de vapor](docs/figuras/vaciado_sinPv.png)
+![Llenado](docs/figuras/llenado.png)
+
 ## Página interactiva
 
-`docs/index.html` es una página estática sin compilación: contadores animados, gráficas con cursor, selector de caso y una animación de la tubería a partir de Le(t) y v(t). Se publica con GitHub Pages desde la carpeta `docs/` si el plan de la cuenta lo permite.
+`docs/index.html` es una página estática sin compilación: contadores animados, gráficas con cursor, selector de caso y una animación de la tubería a partir de Le(t) y v(t). Se publica con GitHub Pages desde `docs/`: <https://aikenort26.github.io/TransitorioBifasico/>.
 
 ## Estructura
 
