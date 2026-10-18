@@ -5,7 +5,7 @@ Aplicación MATLAB (App Designer) para simular transitorios bifásicos agua-aire
 - Vaciado (`VaciadoBifasicoSimple.slx`), con la casilla "Sin tope de Pv, caso crítico puro" que usa `VaciadoBifasicoSimple_sinPv.slx`.
 - Llenado (`AirInTwoPipes.slx`).
 
-Requiere MATLAB R2026b con Simulink.
+Requiere MATLAB R2026a o superior con Simulink (versión 1.2.1).
 
 ## Instalación
 
